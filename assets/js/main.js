@@ -8,6 +8,10 @@
 
 //save price per kilometer in a variable
 
+const pricePerKilometer = 0.21
+ 
+console.log(pricePerKilometer)
+
 //ask the user for the kilometers with prompt and save them in a variable
 
 //ask the user for the age with prompt and save them in a variable 
