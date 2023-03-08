@@ -29,44 +29,38 @@ console.log(userAge);
 
 let userPrice = (userKilometer * pricePerKilometer);
 
-userPrice = Math.round(userPrice * 100) /100
+userPrice = Math.round(userPrice * 100) /100;
 document.getElementById("price").innerHTML = (`€ ${userPrice}`);
 
 
 console.log (`€ ${userPrice}`);
 
 //check if the user is entitled to a discount with if/els
-const discount40 = ((userPrice / 100) * 20);
 
-    //if he is a minor calculate 20 percent of the price and subtract it from the price, if else he is over 65 calculate 40 percent of the price and subtract it from the price
+
+    //if he is a minor calculate 20 percent of the price and subtract it from the price, else if he is over 65 calculate 40 percent of the price and subtract it from the price
+
+    //round the price to cents with Math.round(UserFinalPrice * 100)/100
 
 
 if (userAge < 18) {
-    
+
     const discount20 = ((userPrice / 100) * 20);
+    const discountedMinor = (userPrice - discount20 );
     userPrice = discountedMinor; 
-    
-    console.log(`€ ${userPrice}`)
+    console.log(`€ ${userPrice}`);
+    userPrice = Math.round(userPrice * 100) /100;
+    document.getElementById("price").innerHTML = (`€ ${userPrice}`);
+    console.log(`€ ${userPrice}`);
 
-    userPrice = Math.round(userPrice * 100) /100
-    document.getElementById("price").innerHTML = (`€ ${userPrice}`)
-    console.log(`€ ${userPrice}`)
-
-}
-
-    //if 
-
-const discountedOver65 = (userPrice - discount40 )
-if (userAge >=65) {
-    
+} else if (userAge >=65) {
+    const discount40 = ((userPrice / 100) * 40);
+    const discountedOver65 = (userPrice - discount40 );
     userPrice = discountedOver65; 
-    console.log(`€ ${userPrice}`)
-
-    //round the price to cents with Math.round(UserFinalPrice * 100)/100
-    
-    userPrice = Math.round(userPrice * 100) /100
-    document.getElementById("price").innerHTML = (`€ ${userPrice}`)
-    console.log(`€ ${userPrice}`)
+    console.log(`€ ${userPrice}`);
+    userPrice = Math.round(userPrice * 100) /100;
+    document.getElementById("price").innerHTML = (`€ ${userPrice}`);
+    console.log(`€ ${userPrice}`);
 
 }
 
