@@ -8,32 +8,28 @@
 
 //save price per kilometer in a variable
 
-const pricePerKilometer = 0.21
+const pricePerKilometer = 0.21;
 
-console.log(pricePerKilometer)
+console.log(pricePerKilometer);
 
 
 //ask the user for the kilometers with prompt and save them in a variable
 
-const userKilometer = Number(prompt("Quanti chilometri devi percorrere?"))
-console.log(userKilometer)
+const userKilometer = Number(prompt("Quanti chilometri devi percorrere?"));
 
-if (userKilometer != Number) {
-    alert ("Per favore, inserisci un numero")
-}
+console.log(userKilometer);
+
 
 //ask the user for the age with prompt and save them in a variable 
-const userAge = Number(prompt("Quanti anni hai?"))
+const userAge = Number(prompt("Quanti anni hai?"));
 
-console.log(userAge)
-
-if (userAge != Number) {
-    alert ("Per favore, inserisci un numero")
-}
-
-
+console.log(userAge);
 
 //moltiplicate user's kilometers by price per kilometer 
+
+let userPrice = (userKilometer * pricePerKilometer);
+
+console.log (userPrice);
 
 //check if the user is entitled to a discount with if/els
 
