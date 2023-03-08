@@ -9,12 +9,17 @@
 //save price per kilometer in a variable
 
 const pricePerKilometer = 0.21
- 
+
 console.log(pricePerKilometer)
 
 //ask the user for the kilometers with prompt and save them in a variable
 
+const userKilometer = Number(prompt("Quanti chilometri devi percorrere?"))
+console.log(userKilometer)
+
 //ask the user for the age with prompt and save them in a variable 
+const userAge = Number(prompt("Quanti anni hai?"))
+console.log(userAge)
 
 //moltiplicate user's kilometers by price per kilometer 
 
