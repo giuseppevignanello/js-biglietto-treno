@@ -29,7 +29,11 @@ console.log(userAge);
 
 let userPrice = (userKilometer * pricePerKilometer);
 
-console.log (userPrice);
+userPrice = Math.round(userPrice * 100) /100
+document.getElementById("price").innerHTML = (`€ ${userPrice}`);
+
+
+console.log (`€ ${userPrice}`);
 
 //check if the user is entitled to a discount with if/els
 
@@ -41,13 +45,14 @@ const discountedMinor = (userPrice - discount20 )
 if (userAge < 18) {
     
     userPrice = discountedMinor; 
-    console.log(userPrice);
+    
+    console.log(`€ ${userPrice}`)
 
     //round the price to cents with Math.round(UserFinalPrice * 100)/100
     
     userPrice = Math.round(userPrice * 100) /100
-
-    console.log(userPrice)
+    document.getElementById("price").innerHTML = (`€ ${userPrice}`)
+    console.log(`€ ${userPrice}`)
 
 }
 
@@ -57,13 +62,13 @@ const discountedOver65 = (userPrice - discount40 )
 if (userAge >=65) {
     
     userPrice = discountedOver65; 
-    console.log(userPrice);
+    console.log(`€ ${userPrice}`)
 
     //round the price to cents with Math.round(UserFinalPrice * 100)/100
     
     userPrice = Math.round(userPrice * 100) /100
-
-    console.log(userPrice)
+    document.getElementById("price").innerHTML = (`€ ${userPrice}`)
+    console.log(`€ ${userPrice}`)
 
 }
 

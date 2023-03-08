@@ -1,0 +1,14 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: 
+}
+
+
+#title {
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+#title_content, #price {
+    background-color: aquamarine;
+}
