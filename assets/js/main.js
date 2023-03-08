@@ -29,7 +29,7 @@ console.log(userAge);
 
 let userPrice = (userKilometer * pricePerKilometer);
 
-userPrice = Math.round(userPrice * 100) /100;
+userPrice = userPrice.toFixed(2);
 document.getElementById("price").innerHTML = (`€ ${userPrice}`);
 
 
@@ -40,7 +40,7 @@ console.log (`€ ${userPrice}`);
 
     //if he is a minor calculate 20 percent of the price and subtract it from the price, else if he is over 65 calculate 40 percent of the price and subtract it from the price
 
-    //round the price to cents with Math.round(UserFinalPrice * 100)/100
+    //round the price to cents with toFixed
 
 
 if (userAge < 18) {
@@ -49,7 +49,7 @@ if (userAge < 18) {
     const discountedMinor = (userPrice - discount20 );
     userPrice = discountedMinor; 
     console.log(`€ ${userPrice}`);
-    userPrice = Math.round(userPrice * 100) /100;
+    userPrice = userPrice.toFixed(2);
     document.getElementById("price").innerHTML = (`€ ${userPrice}`);
     console.log(`€ ${userPrice}`);
 
@@ -58,7 +58,7 @@ if (userAge < 18) {
     const discountedOver65 = (userPrice - discount40 );
     userPrice = discountedOver65; 
     console.log(`€ ${userPrice}`);
-    userPrice = Math.round(userPrice * 100) /100;
+    userPrice = userPrice.toFixed(2);
     document.getElementById("price").innerHTML = (`€ ${userPrice}`);
     console.log(`€ ${userPrice}`);
 
