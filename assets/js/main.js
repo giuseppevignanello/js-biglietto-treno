@@ -43,7 +43,10 @@ if (userAge < 18) {
     console.log(userPrice);
 
     //round the price to cents with Math.round(UserFinalPrice * 100)/100
+    
+    userPrice = Math.round(userPrice * 100) /100
 
+    console.log(userPrice)
 
 }
 
