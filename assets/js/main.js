@@ -6,6 +6,26 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
 
+//save price per kilometer in a variable
+
+//ask the user for the kilometers with prompt and save them in a variable
+
+//ask the user for the age with prompt and save them in a variable 
+
+//moltiplicate user's kilometers by price per kilometer 
+
+//check if the user is entitled to a discount with if/els
+
+    //if he is a minor calculate 20 percent of the price and subtract it from the price
+
+    //if he is over 65 calculate 40 percent of the price and subtract it from the price
+
+//round the price to cents with Math.round(UserFinalPrice * 100)/100
+
+
+
+
+
 
 
 //Tools
