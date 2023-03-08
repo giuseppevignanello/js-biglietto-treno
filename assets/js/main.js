@@ -33,7 +33,19 @@ console.log (userPrice);
 
 //check if the user is entitled to a discount with if/els
 
+const discount20 = ((userPrice / 100) * 20);
+
     //if he is a minor calculate 20 percent of the price and subtract it from the price
+const discountedMinor = (userPrice - discount20 )
+if (userAge < 18) {
+    
+    userPrice = discountedMinor; 
+    console.log(userPrice);
+
+    //round the price to cents with Math.round(UserFinalPrice * 100)/100
+
+
+}
 
     //if he is over 65 calculate 40 percent of the price and subtract it from the price
 
